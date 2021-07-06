@@ -13,7 +13,7 @@ export class HomePage implements OnInit {
   public list: any;
 
   constructor(private router: Router, private jugadores: JugadoresService) {
-    this.list = [];jugadores
+    this.list = [];
   }
 
   ngOnInit() {
