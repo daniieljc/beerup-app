@@ -1,0 +1,8 @@
+{
+  "name": "bbtronk",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

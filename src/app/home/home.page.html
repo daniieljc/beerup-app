@@ -1,0 +1,32 @@
+<ion-content class="backimage">
+  <ion-item-group>
+
+    <ion-card class="ion-margin-top">
+      <form (ngSubmit)="addPlayer()">
+        <ion-item>
+          <ion-input type="text" placeholder="Nombre del jugador" [(ngModel)]="nombre" name="nombre"> </ion-input>
+
+          <ion-button type="submit" expaned="full" size="default" color="primary" slot="end">
+            <ion-icon name="add-circle-sharp"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </form>
+    </ion-card>
+
+    <ion-card *ngFor="let data of list; let i=index">
+      <ion-item>
+        <ion-label>{{data}}</ion-label>
+        <ion-icon (click)="deletePlayer(i)" name="close-outline" slot="end"></ion-icon>
+      </ion-item>
+    </ion-card>
+
+    <div class="centrado" (click)="modo()" *ngIf="this.list!=''">
+      <ion-button style="width:300px;">
+        <ion-label>
+          COMENZAR <ion-icon name="arrow-forward-outline"></ion-icon>
+        </ion-label>
+      </ion-button>
+    </div>
+
+  </ion-item-group>
+</ion-content>

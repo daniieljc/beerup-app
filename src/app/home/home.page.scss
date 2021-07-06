@@ -1,0 +1,18 @@
+.starGame {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+.centrado {
+  text-align: center;
+}
+
+ion-content {
+  --background: url(/assets/background.jpg) no-repeat center/cover fixed;
+}
+
+ion-input{
+  --background: 'light';
+}
